@@ -1,0 +1,8 @@
+The colours graph format is an easy to use, human readable format to store undirected graphs with coloured vertices in text files (.clr extension).
+It is fairly similar (though not compatible) to the DIMACS format found here: http://prolland.free.fr/works/research/dsat/dimacs.html
+
+It works as follows:
+- every line starting with "c" is a comment, comment lines can appear anywhere in the file
+- first non-comment line is the "problem line" and reads "p cols <numVertices> <numEdges> <numColours>"
+- edges are specified in a line "e <vertex1> <vertex2>"; edge lines can appear anywhere below the problem line
+- vertex colours are specified in a line "v <vertex> <colour>"; colour lines can appear anywhere below the problem line
